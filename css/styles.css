@@ -1,0 +1,144 @@
+
+.btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #999;
+  border-color: transparent;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn:active {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-slim {
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.limit {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.limit-mid {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.off { display: none; }
+
+.ba0 { border: 0; }
+
+/* Colours */
+
+.coblue { color: #3980C6; }
+.bg-coblue { background-color: #3980C6; }
+.coblue-light { color: #73BFF9; }
+.coblue-sub { color: #768E9F; }
+.bg-coblue-light { background-color: #73BFF9; }
+.charcoal { color: #344B5B; }
+.bg-charcoal { background-color: #344B5B; }
+.cowash { color: #a8cdea; }
+
+.x-tl {
+  background-image: url('../img/grad.png');
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 50%;
+  height: 100%;
+}
+
+.x-mid {
+  background-image: url('../img/grad-edge.png');
+  background-position: center;
+  position: absolute;
+  right: 30%;
+  left: 50%;
+  width: 234px;
+  height: 100%;
+}
+
+.x-tritop {
+  background-image: url('../img/tri.png');
+  height: 389px;
+  width: 389px;
+  top: 13%;
+  left: 15%;
+  opacity: 0.4;
+}
+
+.x-trilow {
+  background-image: url('../img/tri.png');
+  height: 389px;
+  width: 389px;
+  top: -369px;
+  left: 15%;
+  opacity: 0.4;
+}
+
+.x-bgtext {
+  position:absolute;
+  left: 65%;
+  width: 20%;
+  overflow: hidden;
+  opacity: 0.08;
+  font-size: 0.85em;
+  height: 103%;
+  top: -3%;
+  bottom: 0;
+  line-height: 1.2;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+.bgi-hands {
+  background-color: #999;
+  background-image: url('../img/bg-hands.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 50px 85px rgba(152, 152, 152, 0.76);
+}
+
+.linklink {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #73BFF9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tn3 {
+  top: -2rem;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-block;
+  padding: .75rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.hover:hover,
+.hover--light:hover {
+  box-shadow: inset 0 0 0 20rem rgba(255, 255, 255, 0.1);
+}
+.hover--dark:hover {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.1);
+}
