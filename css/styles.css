@@ -1,3 +1,7 @@
+html, body {
+  background-color: #68B6EF;
+  font-family: 'Poppins', sans-serif;
+}
 
 .btn {
   position: relative;
@@ -40,78 +44,18 @@
 
 /* Colours */
 
-.coblue { color: #3980C6; }
-.bg-coblue { background-color: #3980C6; }
+.coblue { color: #68B6EF; }
+.bg-coblue { background-color: #68B6EF; }
 .coblue-light { color: #73BFF9; }
 .coblue-sub { color: #768E9F; }
 .bg-coblue-light { background-color: #73BFF9; }
 .charcoal { color: #344B5B; }
 .bg-charcoal { background-color: #344B5B; }
-.cowash { color: #a8cdea; }
+.cowash { color: #c3e4ff; }
+.teal { color: #A5EAEA; }
+.teal-dark { color: #569499; }
+.bg-teal { background-color: #A5EAEA; }
 
-.x-tl {
-  background-image: url('../img/grad.png');
-  background-position: center;
-  position: absolute;
-  left: 0;
-  right: 50%;
-  height: 100%;
-}
-
-.x-mid {
-  background-image: url('../img/grad-edge.png');
-  background-position: center;
-  position: absolute;
-  right: 30%;
-  left: 50%;
-  width: 234px;
-  height: 100%;
-}
-
-.x-tritop {
-  background-image: url('../img/tri.png');
-  height: 389px;
-  width: 389px;
-  top: 13%;
-  left: 15%;
-  opacity: 0.4;
-}
-
-.x-trilow {
-  background-image: url('../img/tri.png');
-  height: 389px;
-  width: 389px;
-  top: -369px;
-  left: 15%;
-  opacity: 0.4;
-}
-
-.x-bgtext {
-  position:absolute;
-  left: 65%;
-  width: 20%;
-  overflow: hidden;
-  opacity: 0.08;
-  font-size: 0.85em;
-  height: 103%;
-  top: -3%;
-  bottom: 0;
-  line-height: 1.2;
-  text-align: justify;
-  text-justify: distribute;
-}
-
-.bgi-hands {
-  background-color: #999;
-  background-image: url('../img/bg-hands.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 430px;
-  position: absolute;
-  width: 100%;
-  box-shadow: 0px 50px 85px rgba(152, 152, 152, 0.76);
-}
 
 .linklink {
   font-weight: bold;
