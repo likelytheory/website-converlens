@@ -1,9 +1,65 @@
 html, body {
-  background-color: #68B6EF;
+  /* background-color: #68B6EF; */
   font-family: 'Poppins', sans-serif;
 }
 
+.tag {
+  background-color: #e3f4ff;
+  padding: 0 3px;
+  color: #344B5B;
+  font-style: italic;
+}
+
+.shadowed {
+  box-shadow: 7px 2px 5px rgba(0,0,0,0.1);
+}
+
+.bgx {
+  min-height: 777px;
+  width: 100%;
+  min-width: 950px;
+  background: url(../images/funnel.png) no-repeat;
+  background-position-x: 100%;
+  background-position-y: -60px;
+}
+
+.bgchart {
+  min-height: 581px;
+  width: 100%;
+  background: url(../images/bg1.png) center;
+}
+
+.bgletters {
+  min-height: 473px;
+  width: 750px;
+  top: -50px;
+  right: 45%;
+  background: url(../images/letters.png) no-repeat 0%;
+}
+
+.bgcharts {
+  min-height: 435px;
+  width: 750px;
+  top: -70px;
+  right: -25%;
+  background: url(../images/charts.png) no-repeat 100%;
+  opacity: 0.8;
+}
+
+.bggraph {
+  min-height: 685px;
+  width: 100%;
+  min-width: 1250px;
+  /* top: 270px; */
+  /* right: -20%; */
+  background: url(../images/charts.png) pink no-repeat;
+  background-position-x: 100%;
+  background-position-y: 250px;
+  opacity: 0.8;
+}
+
 .btn {
+  font-family: 'Poppins', sans-serif;
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -16,6 +72,10 @@ html, body {
   text-align: center;
   cursor: pointer;
   overflow: hidden;
+}
+
+.cta-btn {
+  border-radius: 32px;
 }
 
 .btn:active {
@@ -33,8 +93,18 @@ html, body {
   margin: 0 auto;
 }
 
+.limit-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.limit-widest {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .limit-mid {
-  max-width: 780px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -43,6 +113,8 @@ html, body {
 .ba0 { border: 0; }
 
 /* Colours */
+.grey-brite { color: #f6f6f6; }
+.bg-grey-brite { background-color: #f6f6f6; }
 
 .coblue { color: #68B6EF; }
 .bg-coblue { background-color: #68B6EF; }
@@ -79,7 +151,7 @@ html, body {
   background-color: rgba(255,255,255,0.2);
 }
 
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
   color:#b6d0ea;
 }
 
@@ -93,7 +165,7 @@ html, body {
 
 ::placeholder {
   color:#b6d0ea;
-}
+} */
 
 .hover:hover,
 .hover--light:hover {
