@@ -17,10 +17,12 @@ html, body {
 .bgx {
   min-height: 777px;
   width: 100%;
-  min-width: 950px;
   background: url(../images/funnel.png) no-repeat;
-  background-position-x: 100%;
-  background-position-y: -60px;
+  background-position: 100% -60px;
+}
+
+.bgx2 {
+  background-position: top -60px right -140px;
 }
 
 .bgchart {
