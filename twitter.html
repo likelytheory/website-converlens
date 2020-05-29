@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="AI powered analysis platform for government policy design">
       <meta property="og:type" content="website">
-      <meta property="og:title" content="Converlens | 404">
+      <meta property="og:title" content="Converlens">
       <meta property="og:description" content="AI powered analysis platform for government policy design">
       <meta property="og:image" content="assets/imgs/Converlens-logo.png">
       <meta property="og:url" content="https://converlens.com">
@@ -22,7 +22,9 @@
       <link rel="icon" type="image/png" sizes="32x32" href="https://converlens.com/assets/imgs/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="https://converlens.com/assets/imgs/favicon-16x16.png">
       <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/twitter.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/letters.css">
 
 	  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124698900-1"></script>
 	  <script>
@@ -34,7 +36,7 @@
 	  </script>
 	        
    </head>
-   <body class="error">
+   <body class="company" itemscope itemtype="http://schema.org/tech">
          <div class="page">
             <header class="nav-bar">
                <div class="container-fluid wrapper">
@@ -51,7 +53,7 @@
                         <li itemprop="name" role="menuitem" class="nav-item"><a itemprop="url" href="services.html" title="Services">Services</a></li>
                         <li itemprop="name" role="menuitem" class="nav-item"><a itemprop="url" href="company.html" title="Company">Company</a></li>
                         <li itemprop="name" role="menuitem" class="nav-item"><a itemprop="url" href="contact.html" title="Contact">Contact</a></li>
-                        <li itemprop="name" role="menuitem" class="nav-item login"><a itemprop="url" href="https://app.converlens.com/login" target="_blank" title="Login">Login</a></li>
+                        <li itemprop="name" role="menuitem" class="nav-item login"><a itemprop="url" href="https://app.converlens.com/login" title="Login">Login</a></li>
                      </ul>
                   </nav>
                </div>
@@ -61,33 +63,48 @@
                   <div class="banner">
                   <div class="wrapper">
                         <div class="title-wrapper">
-                           <h1 class="title">Always finding new ways</h1>
+                           <h1 class="title">Twitter Feed</h1>
                          </div>
                   </div>
                   </div>
 
                   <div class="content">
-                     <div class="wrapper">
-						 <h1>404</h1>
-                        <h2>The page referred to does not exist.</h2>
-                        <p>You will be redirected shortly</p>
+                     <div class="wrapper intro">
+						 <h1>@converlens on Twitter</h1>
+                     </div>
+                     <div class="wrapper news" style="background:#fff">
+							 <div id="news"></div>
                      </div>
                   </div>
                </section>
             </main>
             <footer class="page-footer">
-               <h5 class="copyright"><span>Copyright Converlens © <span class="year">2020</span> &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; </span><a href="privacy.html">Privacy Policy</a></h5>
+               <div class="footer-wrapper wrapper">
+                  <div class="formSteps">
+                  <h1>Let us show you how.</h1>
+                  <p><b>Here's what to do:</b></p>
+                  <ul>
+                  <li><div class="bullet"></div>Request a personalised demonstration of what Converlens can do for you and your engagement.</li>
+                  <li><div class="bullet"></div>We'll walk you through the product and answer any questions you may have about our services.</li>
+                  <li><div class="bullet"></div>All we need are a few details and we'll be in touch to schedule a time that works best for you.</li>
+                  </ul>
+                     </div>
+                     <div class="formRequest" style="margin-top: 6em;" netlify>
+                        <form id="request_demo" class="contact-form"  autocomplete="off">
+                           <fieldset class="form-group"><input id="formName" class="form-input" name="name" type="text" value="" placeholder="Your name"></fieldset>
+                           <fieldset class="form-group"><input id="formEmail" class="form-input" name="email" type="email" required="true" value="" placeholder="Email Address"></fieldset>
+                           <fieldset class="form-group"><textarea id="formDetail" class="form-input" name="detail" value="" placeholder="How can we help?"></textarea></fieldset>
+                           <div class="form-group"><input id="formButton" class="btn" type="submit" value="Request demo"></div>
+                        </form>
+                     </div>
+               </div>
+               <h5 class="copyright"><span>Copyright Converlens � <span class="year">2020</span> &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; </span><a href="privacy.html">Privacy Policy</a></h5>
 			   <a id="up" href="#"></a>
             </footer>
          </div>
-      </div>
+      <script src="assets/js/countries.js"></script>
       <script src="assets/js/nav.js"></script>
-      
-      <script>
-			setTimeout(function(){ 
-				  window.location.href = "/index.html";
-			}, 8000);
-      </script>
-
+      <script src="assets/js/letters.js"></script>
+      <script src="assets/js/twitter.js"></script>
    </body>
 </html>

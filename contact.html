@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="AI powered analysis platform for government policy design">
       <meta property="og:type" content="website">
-      <meta property="og:title" content="Converlens | 404">
+      <meta property="og:title" content="Converlens | Contact">
       <meta property="og:description" content="AI powered analysis platform for government policy design">
       <meta property="og:image" content="assets/imgs/Converlens-logo.png">
       <meta property="og:url" content="https://converlens.com">
@@ -17,7 +17,7 @@
 	  <meta name="robots" content="index,follow">
 	  <meta name="googlebot" content="index,follow">
 	  --->
-      <title>Converlens</title>
+      <title>Converlens | Contact</title>
       <link rel="apple-touch-icon" sizes="180x180" href="https://converlens.com/assets/imgs/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="https://converlens.com/assets/imgs/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="https://converlens.com/assets/imgs/favicon-16x16.png">
@@ -34,7 +34,7 @@
 	  </script>
 	        
    </head>
-   <body class="error">
+   <body class="contact">
          <div class="page">
             <header class="nav-bar">
                <div class="container-fluid wrapper">
@@ -61,16 +61,23 @@
                   <div class="banner">
                   <div class="wrapper">
                         <div class="title-wrapper">
-                           <h1 class="title">Always finding new ways</h1>
+                           <h1 class="title">Contact us</h1>
                          </div>
                   </div>
                   </div>
-
                   <div class="content">
                      <div class="wrapper">
-						 <h1>404</h1>
-                        <h2>The page referred to does not exist.</h2>
-                        <p>You will be redirected shortly</p>
+						  <h1>Get in touch.</h1>
+						  <div class="form-container">
+							 <form class="contact-form" netlify>
+							   <fieldset class="form-group"><input id="contactName" class="form-input" name="firstName" type="text" required="true" value="" placeholder="Your Name"></fieldset>
+							   <fieldset class="form-group"><input id="contactEmail" class="form-input" name="email" type="email" required="true" value="" placeholder="Work Email Address"></fieldset>
+							   <fieldset class="form-group"><input id="contactLastName" class="form-input" name="org" type="text" value="" placeholder="Organisation/Department/Company"></fieldset>
+							   <fieldset  class="form-group autocomplete"><input id="formCountry" class="form-input" name="country" type="text" value="" placeholder="Country"></fieldset>
+							   <fieldset class="form-group"><textarea id="formComments" class="form-input" name="comments" type="text" value="" placeholder="How can we help?"></textarea></fieldset>
+							   <div class="form-group"><input id="contactButton" class="btn" type="submit" value="Send"></div>
+							 </form>
+						  </div>
                      </div>
                   </div>
                </section>
@@ -80,14 +87,8 @@
 			   <a id="up" href="#"></a>
             </footer>
          </div>
-      </div>
+      <script src="assets/js/countries.js"></script>
       <script src="assets/js/nav.js"></script>
       
-      <script>
-			setTimeout(function(){ 
-				  window.location.href = "/index.html";
-			}, 8000);
-      </script>
-
    </body>
 </html>
