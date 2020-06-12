@@ -75,7 +75,19 @@
 							   <fieldset class="form-group"><input id="contactLastName" class="form-input" name="org" type="text" value="" placeholder="Organisation/Department/Company"></fieldset>
 							   <fieldset  class="form-group autocomplete"><input id="formCountry" class="form-input" name="country" type="text" value="" placeholder="Country"></fieldset>
 							   <fieldset class="form-group"><textarea id="formComments" class="form-input" name="comments" type="text" value="" placeholder="How can we help?"></textarea></fieldset>
-							   <div class="form-group"><input id="contactButton" class="btn" type="submit" value="Send"></div>
+
+                        <input style="position: absolute; right: 500000px;"" type="checkbox" id="formUpgrade" name="free_upgrade">
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1em">
+                           <input type="text" id="formHuman" name="human" style="width: 40px; margin-right: 5px" required="true">
+                           <div style="padding:0; margin:0; ">
+                              <div style="font-size: 10px; text-transform: uppercase;">Are you a human <span style="font-size: 16px; color: red;">*</span></div>
+                              <div style="font-size: 12px">What is 3 plus four? (answer 7)</div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <input onclick="var x = document.getElementById('formUpgrade').checked; if (x) { return false }; var v = document.getElementById('formHuman').value; if (v !== 'seven' && v !== '7') { alert('Please fill out all required fields') }" id="formButton" class="btn" type="submit" value="Request demo">
+                        </div>
 							 </form>
 						  </div>
                      </div>
