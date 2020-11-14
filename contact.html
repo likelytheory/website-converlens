@@ -78,8 +78,8 @@
 
                         <input style="position: absolute; right: 500000px;"" type="checkbox" id="formUpgrade" name="free_upgrade">
 
-                        <div style="display: flex; align-items: center; margin-bottom: 1em">
-                           <input type="text" id="formHuman" name="human" style="width: 40px; margin-right: 5px" required="true">
+                        <div id='hwrap' style="display: flex; align-items: center; margin-bottom: 1em">
+                           <input id='humaniser' type="text" id="formHuman" name="human" style="width: 40px; margin-right: 5px" required="true">
                            <div style="padding:0; margin:0; ">
                               <div style="font-size: 10px; text-transform: uppercase;">Are you a human <span style="font-size: 16px; color: red;">*</span></div>
                               <div style="font-size: 12px">What is 3 plus four? (answer 7)</div>
@@ -96,11 +96,19 @@
             </main>
             <footer class="page-footer">
                <h5 class="copyright"><span>Copyright Converlens © <span class="year">2020</span> &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; </span><a href="privacy.html">Privacy Policy</a></h5>
-			   <a id="up" href="#"></a>
+               <a id="up" href="#"></a>
             </footer>
          </div>
-      <script src="assets/js/countries.js"></script>
+
       <script src="assets/js/nav.js"></script>
+
+      <script type="text/javascript">
+         var wrap = document.getElementById('hwrap')
+         wrap.style.display = 'none'
+ 
+         var h = document.getElementById('humaniser')
+         h.value = 7
+       </script>
       
    </body>
 </html>

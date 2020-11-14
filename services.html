@@ -121,32 +121,41 @@
                   <li><div class="bullet"></div>All we need are a few details and we'll be in touch to schedule a time that works best for you.</li>
                   </ul>
                      </div>
-                     <div class="formRequest" style="margin-top: 6em;">
-                        <form id="request_demo" class="contact-form"  autocomplete="off"  method="POST" action="https://webapi.converlens.com/submit">
-                           <fieldset class="form-group"><input id="formName" class="form-input" name="name" type="text" value="" placeholder="Your name"></fieldset>
-                           <fieldset class="form-group"><input id="formEmail" class="form-input" name="email" type="email" required="true" value="" placeholder="Email Address"></fieldset>
-                           <fieldset class="form-group"><textarea id="formDetail" class="form-input" name="detail" value="" placeholder="How can we help?"></textarea></fieldset>
-                           <input style="position: absolute; right: 500000px;"" type="checkbox" id="formUpgrade" name="free_upgrade">
+                  <div class="formRequest" style="margin-top: 6em;">
+                     <form id="request_demo" class="contact-form"  autocomplete="off"  method="POST" action="https://webapi.converlens.com/submit">
+                        <fieldset class="form-group"><input class="form-input" name="addressee" type="text" value="" placeholder="Your name"></fieldset>
+                        <fieldset class="form-group"><input id="formEmail" class="form-input" name="email" type="email" required="true" value="" placeholder="Email (required)"></fieldset>
+                        <fieldset class="form-group"><textarea id="formDetail" class="form-input" name="detail" value="" placeholder="How can we help?"></textarea></fieldset>
+                        
+                        <input style="position: absolute; right: 500000px;"" type="checkbox" id="formUpgrade" name="free_upgrade">
 
-                           <div style="display: flex; align-items: center; margin-bottom: 1em">
-                              <input type="text" id="formHuman" name="human" style="width: 40px; margin-right: 5px" required="true">
-                              <div style="padding:0; margin:0; ">
-                                 <div style="font-size: 10px; text-transform: uppercase;">Are you a human <span style="font-size: 16px; color: red;">*</span></div>
-                                 <div style="font-size: 12px">What is 3 plus four? (answer 7)</div>
-                              </div>
+                        <div id='hwrap' style="display: flex; align-items: center; margin-bottom: 1em">
+                           <input id='humaniser' type="text" id="formHuman" name="human" style="width: 40px; margin-right: 5px" required="true">
+                           <div style="padding:0; margin:0; ">
+                              <div style="font-size: 10px; text-transform: uppercase;">Are you a human <span style="font-size: 16px; color: red;">*</span></div>
+                              <div style="font-size: 12px">What is 3 plus four? (answer 7)</div>
                            </div>
-                           <div class="form-group">
-                              <input onclick="var x = document.getElementById('formUpgrade').checked; if (x) { return false }; var v = document.getElementById('formHuman').value; if (v !== 'seven' && v !== '7') { alert('Please fill out all required fields') }" id="formButton" class="btn" type="submit" value="Request demo">
-                           </div>
-                        </form>
-                     </div>
+                        </div>
+                        <div class="form-group">
+                           <input onclick="var x = document.getElementById('formUpgrade').checked; if (x) { return false }; var v = document.getElementById('formHuman').value; if (v !== 'seven' && v !== '7') { alert('Please fill out all required fields') }" id="formButton" class="btn" type="submit" value="Request demo">
+                        </div>
+                     </form>
+                  </div>
                </div>
                <h5 class="copyright"><span>Copyright Converlens © <span class="year">2020</span> &nbsp; | &nbsp; All rights reserved &nbsp; | &nbsp; </span><a href="privacy.html">Privacy Policy</a></h5>
-			   <a id="up" href="#"></a>
+            <a id="up" href="#"></a>
             </footer>
          </div>
-      <script src="assets/js/countries.js"></script>
+
+      <script src="assets/js/carousel-logos.js"></script>
       <script src="assets/js/nav.js"></script>
+      <script type="text/javascript">
+        var wrap = document.getElementById('hwrap')
+        wrap.style.display = 'none'
+
+        var h = document.getElementById('humaniser')
+        h.value = 7
+      </script>
       
    </body>
 </html>
